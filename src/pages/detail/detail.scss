@@ -1,0 +1,103 @@
+@import '../../app.sass';
+$color-white: #ffffff;
+page{
+  background-color: #F7F7F7;
+}
+.page-goods-detail{
+  width: 100%;
+  padding-bottom: vw(70);
+  .swiper{
+    width: 100%;
+    height: vw(375);
+  }
+  .img{
+    width: 100%;
+    height: vw(375);
+  }
+  .goods-info{
+    width: 100%;
+    background-color: white;
+    padding-bottom: vw(10);
+    .price{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      padding: vw(5) vw(15);
+      .sell_price{
+        font-size: vw(24);
+        color: #FA4046;
+        margin-right: vw(5);
+      }
+      .line_price{
+        font-size: vw(14);
+        color: #A6A6A6;
+        position: relative;
+        top: vw(-4);
+      }
+    }
+    .name{
+      font-size: vw(16);
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #333333;
+      line-height: vw(22);
+      padding: 0 vw(15);
+    }
+    .remark{
+      margin-top: vw(10);
+      font-size: vw(14);
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #FA8E40;
+      line-height: vw(20);
+      padding: 0 vw(15);
+    }
+    .sale-out{
+      height: vw(17);
+      font-size: vw(12);
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #7F7F7F;
+      line-height: vw(17);
+      padding: 0 vw(15);
+      margin-top: vw(10);
+    }
+  }
+  .goods-image{
+    width: 100%;
+    background-color: $color-white;
+    margin-top: vw(10);
+    .label{
+      font-size: vw(14);
+      color: #333333;
+      padding: vw(10) vw(15);
+    }
+    .item{
+      width: 100%;
+      image{
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+  .footer{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    height: vw(50);
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn{
+      width: vw(345);
+      height: vw(40);
+      background: #BF0017;
+      border-radius: vw(25);
+      color: $color-white;
+      font-size: vw(14);
+    }
+  }
+}
